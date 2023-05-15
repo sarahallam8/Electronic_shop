@@ -1,0 +1,68 @@
+<html>
+    <head>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    
+
+    <body>
+        <div></div>
+     
+      <div class="w-75 mx-auto py-4">
+         <h3 class="py-3 fw-bolder ">Product Managment System</h3>
+
+         <label for="productNameInput">ProductName :</label>
+         <input type="text" class="form-control mb-3" id="productNameInput">
+
+         <label for="productPriceInput">ProductPrice :</label>
+         <input type="number" class="form-control mb-3" id="productPriceInput">
+
+         <label for="productCatagoryInput">Productcatagory :</label>
+         <input type="text" class="form-control mb-3" id="productCatagoryInput">
+
+         <label for="productDescriptionInput">ProductDescription :</label>
+         <textarea type="text" class="form-control mb-3" id="productDescriptionInput"></textarea>
+         
+         <button onclick=" addProduct(); " class="btn btn-outline-info ">add product</button>
+      
+         <div class="w-75 mx-auto">
+            <label for="search">search :</label>
+            <input  oninput="searchProduct(this.value)"type="text" class="form-control " placeholder="search by name" id="search">
+        </div>
+      
+      
+        </div>
+    
+       
+
+     
+        <table class="table w-75 mx-auto">
+            <thead>
+                <th>index</th>
+                <th>ProductName</th>
+                <th>ProductPrice</th>
+                <th>Productcatagory</th>
+                <th>ProductDesc</th>
+                <th>Update</th>
+                <th>Delet</th>
+            </thead>
+            <tbody id="tableBody">
+           
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+   
+    </body>
+
+
+
+
+
+</html>
